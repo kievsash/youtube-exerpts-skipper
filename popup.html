@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Excerpt Skipper</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .timestamp-input {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 60px;
+      padding: 5px;
+    }
+    button {
+      padding: 5px 10px;
+      background: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #cc0000;
+    }
+    #timestamps {
+      margin-top: 10px;
+    }
+    .timestamp-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .header {
+      background-color: #f8f9fa;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #343a40;
+    }
+
+    .header .description {
+      margin: 10px 0 0;
+      font-size: 12px;
+      color: #6c757d;
+    }
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 10px;
+      text-align: center;
+      border-top: 1px solid #e9ecef;
+      margin-top: 10px;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 12px;
+      color: #6c757d;
+    }
+
+    .footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Youtube excerpt skipper</h2>
+    <p class="description">Skip video timespans with unwanted content (nudity, debauchery, violence, etc)</p>
+  </div>
+  <h3>Add Timespan:</h3>
+  <div class="timestamp-input">
+    <input type="number" id="minutesFrom" placeholder="Min" min="0">
+    <input type="number" id="secondsFrom" placeholder="Sec" min="0" max="59">
+    <input type="number" id="minutesTo" placeholder="Min" min="0">
+    <input type="number" id="secondsTo" placeholder="Sec" min="0" max="59">
+    <button id="addTimestamp">Add</button>
+  </div>
+  <div id="timestamps"></div>
+  <div class="footer">
+    <p>Author: <a href="https://medium.com/@alexanderposhtaruk">Oleksandr Poshtaruk</a></p>
+    <p>Do you like this extention? <a href="https://buymeacoffee.com/nqypxi6">Buy me a coffee!</a></p>
+    <p>And lets keep in touch on <a href="https://twitter.com/El_Extremal">Twitter!</a></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
