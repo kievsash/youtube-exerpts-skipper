@@ -5,7 +5,8 @@ But sitting beside and forwarding video is not a good option  - you can do that 
 It saves them for specific Youtube video id in the browser localstorage so you should not enter it again for another watching (of course until you clean the browser cache). 
 Extention monitor video currentTime and skip timespans which you provided in the option window.
 
-![youtube-skipper promo-image](https://github.com/user-attachments/assets/56df4600-fca8-44cd-9fe9-c175bdbd7596)
+![promo-image](https://github.com/user-attachments/assets/d82f98f6-0469-45ee-808c-c59014c9dc61)
+
 
 ## how to check it locally
 1. git clone it
